@@ -1,0 +1,68 @@
+.titulo{
+    text-shadow: 0 0 2px red;
+            color:rgb(255, 255, 255);
+           
+           }
+body{
+    background-color: rgba(218, 238, 104, 0.884);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.container{
+    
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*divisiones de columnas*/
+.flex {
+   display: flex; 
+   flex-wrap: wrap; /*adapta el tamaño de la columna*/
+}
+
+.text-center{
+    text-align: center;
+}
+
+.columna{
+    background: #ffd089; /*color de fondo de colum*/
+    color: #333; /*color de texto*/
+    border: 1px solid #333;/*corde de columnas*/
+    margin: 0 auto ; /*widht x height*/ 
+    padding: 10px;
+    border-radius: 17px; /*borde redondeado*/
+    box-shadow: 10px 10px 5px rgb(206, 45, 16); /*bordes sombredos*/
+    /*en positivo eje x, negativo eje y*/
+    /* los 5 px es la calidad del degradado*/
+    width: 20%; /*espaciado entre columnas*/
+    box-sizing: border-box;
+    
+
+}
+
+/*cambiamos color de precio*/
+.precio{
+    font-size: 50px;
+    color:rgb(255, 81, 0);
+}
+ .btnprecio{
+    background: orange; /*color de boton*/
+    display: block; /*forma de bloque*/
+    padding: 10px;
+    color:#fff;
+    text-decoration: none; /*sirve para eliminar la linea inferior del texto*/
+    border-radius: 3px; /*redondeamos el boton*/
+    margin-bottom: 3px; /*separacion del margen del background*/
+ }
+
+ .btnprecio:hover{ /*acciona al boton con tonalidad distinta al colocar cursor*/
+    background: orangered;
+ }
+@media (max-width: 1070px){ /*esta funcion es para cuando se 
+    reduce el ancho de la ventana, se adapten las columnas*/
+    .columna{
+        width: 100%
+
+    }
+}
